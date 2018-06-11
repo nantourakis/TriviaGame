@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
+</head>
+<body>
+
+<h1>Welcome to Nick's Trivia Quiz!</h1>
+
+<form id = "quiz" name = "quiz">
+
+    <button type="button" id="startButton" class="btn btn-primary btn-lg text-center"><i class="fas fa-futbol"></i> CLICK HERE TO START!</button>
+
+    <p>Which country won the 2014 World Cup?</p>
+
+    <input id = "textbox" type = "text" name = "question1">
+
+    <p>Who is Nintendo's famous plumber that wears a green hat?</p>
+    <input id = "radioButton" type = "radio" name = "question2" value = "Luigi"> Luigi<br>
+    <input id = "radioButton" type = "radio" name = "question2" value = "Wario"> Wario<br>
+    <input id = "radioButton" type = "radio" name = "question2" value = "Mario"> Mario<br>
+
+    <p>What was the first music video aired on MTV?</p>
+    <input id = "radioButton" type = "radio" name = "question3" value = "Thriller"> "Thriller" by Michael Jackson<br>
+    <input id = "radioButton" type = "radio" name = "question3" value = "Video Killed the Radio Star"> "Video Killed the Radio Star" by the Buggles<br>
+    <input id = "radioButton" type = "radio" name = "question3" value = "California Girls"> "California Girls" by Beach Boys<br>
+
+    <br>
+
+    <input id = "submitButton" type = "button" value = "Submit Quiz!" onclick="review();"> 
+   
+</form>
+
+<div id = "afterSubmit">
+<p id = "feedback"></p>
+<p id = "questionsCorrect"></p>
+<img id = "picture">
+
+</div>
+
+
+    
+</body>
+</html>
